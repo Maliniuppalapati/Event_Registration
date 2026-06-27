@@ -2,7 +2,7 @@ import axios from 'axios';
 const API = axios.create({ 
   baseURL: typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
     ? 'http://localhost:5000/api'
-    : 'https://event-registration-backend-7xi6.onrender.com/api'
+    : 'https://event-registration-zvhj.onrender.com'
 });
 
 export const setAuthToken = (token) => {
